@@ -4,6 +4,7 @@ document
 		e.preventDefault();
 		const stock = e.target[0].value;
 		const checkbox = e.target[1].checked;
+		console.log(stock, checkbox);
 		fetch(
 			`/api/stock-prices/?stock=${stock}&like=${checkbox}`
 		)
